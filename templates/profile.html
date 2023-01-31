@@ -1,0 +1,50 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+    <h1 class="text-center">Profile</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{% static 'images/profile2.jpg' %}" class="img-fluid rounded"  alt="...">
+        </div>
+        <div class="col-md-8">
+            <ul class="list-unstyled">
+                <h1 class="text-primary display-1">Anda Kaewpoo</h1>
+                <li class="lead"><h2>ประวัติส่วนตัว:</h2>
+                    <ul>
+                        <li><strong>ชื่อจริง:</strong> นายอันดา แก้วภู</li>
+                        <li><strong>รหัส:</strong> 65342310191-3</li>
+                        <li><strong>ชื่อเล่น:</strong> ริว</li>
+                        <li><strong>วันเกิด:</strong> 22 กันยายน 2544</li>
+                        <li><strong>สัญชาติ:</strong> ไทย</li>
+                        <li><strong>น้ำหนัก:</strong> </li>
+                        <li><strong>ส่วนสูง:</strong> </li>
+                        <li><strong>พี่น้อง:</strong> 1 คน นายอินทัช แก้วภู (ฟิว)</li>
+                        <li><strong>ที่อยู่:</strong> บ้านโนนสง่า 10/6 ต.เมืองใหม่ อ.ศรีบุญเรือง จ.หนองบัวลำภู</li>
+                        <li><strong>งานอดิเรก:</strong> ชอบฟังเพลง-เล่นเกม</li>
+                        <li><strong>สิ่งที่แพ้:</strong> กุ้ง</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <h2 class="text-center">สิ่งที่ชอบ</h2>
+    <div class="row mt-3">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'images/profile3.jpg' %}" class="img-fluid rounded-circle h-75"  alt="...">
+            <h3 class="text-warning mt-2">กาแฟที่ชอบ</h3>
+            <p class="lead">คาปูชิโน่ ลาเต้</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'images/profile4.jpg' %}" class="img-fluid rounded-circle h-75"  alt="...">
+            <h3 class="text-warning mt-2">ผลไม้ที่ชอบ</h3>
+            <p class="lead">กล้วย เงาะ มังคุด</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <img src="{% static 'images/profile5.jpg' %}" class="img-fluid rounded-circle h-75"  alt="...">
+            <h3 class="text-warning mt-2">อาหารที่ชอบ</h3>
+            <p class="lead">ก๋วยเตี๋ยว</p>
+        </div>
+    </div>
+{% endblock %}

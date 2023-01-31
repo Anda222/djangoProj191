@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anda Riw - 191</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet/bootstrap-5.3.0/css/bootstrap.css' %}">
+    <script src="{% static 'stylesheet/bootstrap-5.3.0/js/bootstrap.js' %}"></script></head>
+<body>
+<div class="row">
+    <div class="row bg-primary text-light text-center">
+        <h1 class="display-3">Anda Kaewpool - Riw</h1>
+    </div>
+    <div class="col-md-2 p-md-3">
+        <ul class="list-group">
+            <li class="list-group-item bg-warning text-light">
+                <i class="fa fa-list"></i> Menu:
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'home' %}">
+                    <i class="fa fa-home"></i>Home
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'profile' %}">
+                    <i class="fa fa-book"></i>Profile
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'education' %}">
+                    <i class="fa fa-book"></i>Education
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'attention' %}">
+                    <i class="fa fa-book"></i>Attention
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'career' %}">
+                    <i class="fa fa-book"></i>Career
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'idol' %}">
+                    <i class="fa fa-book"></i>Idol
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-10 mt-md-2">
+        {% block content %}
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>
