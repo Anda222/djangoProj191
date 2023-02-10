@@ -1,0 +1,32 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+    <h1 class="text-center">Show Data</h1>
+    <hr>
+    <p><strong>Name: </strong>{{ name }}</p>
+    <p><strong>Nickname: </strong>{{ nickname }}</p>
+    <p><strong>ID: </strong>{{ id }}</p>
+    <p><strong>Age: </strong>{{ age }}</p>
+    <p><strong>Birthday: </strong>{{ birthday }}</p>
+    <p><strong>National: </strong>{{ national }}</p>
+    <p><strong>Address: </strong>{{ address }}</p>
+    <p><strong>Hobby: </strong>{{ hobby }}</p>
+    <p><strong>Food: </strong>{{ food }}</p>
+    <p><strong>Motto: </strong>{{ motto }}</p>
+    <table class="table table-responsive">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <th>IMAGE</th>
+        </tr>
+        {% for product in product %}
+            <tr>
+                <th>{{ product.0 }}</th>
+                <th>{{ product.1 }}</th>
+                <th>{{ product.2 }}</th>
+                <th><img src="{{ product.3 }}" style="width: 80px"></th>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

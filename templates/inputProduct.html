@@ -1,0 +1,17 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+    <h1>Input Form.</h1>
+    <hr>
+    <form method="post" class="form-control">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form }}
+        </div>
+        <div class="text-center">
+            <br>
+            <input type="submit" value="save" class="btn btn-success">
+            <input type="button" value="cancel" class="btn btn-danger" onclick="location.href='{% url 'listProduct' %}'">
+        </div>
+    </form>
+{% endblock %}

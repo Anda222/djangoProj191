@@ -22,5 +22,8 @@ urlpatterns = [
     path('education/', views.education, name="education"),
     path('attention/', views.attention, name="attention"),
     path('career/', views.career, name="career"),
-    path('idol/', views.idol, name="idol")
+    path('idol/', views.idol, name="idol"),
+    path('showData/', views.showData, name="showData"),
+    path('listProduct/', views.listProduct, name="listProduct"),
+    path('inputProduct/', views.inputProduct, name="inputProduct")
 ]
